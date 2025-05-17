@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Bot Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="header">
+            <h1>WhatsApp Bot Dashboard</h1>
+        </header>
+
+        <!-- Botões de controle -->
+        <section class="controls">
+            <div class="button-container">
+                <button class="btn start" onclick="startBot()">
+                    <i class="fas fa-play"></i> Iniciar Bot
+                </button>
+                <button class="btn stop" onclick="stopBot()">
+                    <i class="fas fa-stop"></i> Parar Bot
+                </button>
+	
+<button onclick="logoutWhatsApp()">🔌 Desconectar WhatsApp</button>
+
+
+<button class="btn disconnect" onclick="disconnectBot()">
+    <i class="fas fa-sign-out-alt"></i> Desconectar
+</button>
+            </div>
+        </section>
+
+        <!-- Status e QR Code -->
+        <section class="status-section">
+            <div id="status" class="status">Aguardando comando...</div>
+            <div id="qrcode" class="qrcode"></div>
+        </section>
+
+        <!-- Logs de atividade -->
+        <section class="logs-section">
+            <h2>Logs de Atividade</h2>
+            <div id="logs" class="logs"></div>
+        </section>
+
+        <!-- Mensagens recebidas e enviadas -->
+        <section class="messages-section">
+            <h2>Mensagens</h2>
+            <div id="mensagens" class="messages-container">
+                <!-- As mensagens recebidas serão adicionadas aqui via JavaScript -->
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
